@@ -1,0 +1,969 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maria Lißner — Impact mechanics of interfaces, University of Oxford</title>
+  <meta name="description" content="Dr Maria Lißner is a Royal Academy of Engineering Research Fellow at the University of Oxford, working on how adhesive joints, composites and 3D-printed materials fail under impact, in partnership with Rolls-Royce and international collaborators.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,0..100,0..1;1,9..144,300..700,0..100,0..1&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="bg" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a class="brand" href="#top">Maria Lißner<small>Impact mechanics · Oxford</small></a>
+    <nav aria-label="Sections">
+      <a href="#research">Research</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#projects">Projects</a>
+      <a href="#industry">Industry</a>
+      <a href="#publications">Publications</a>
+      <a href="#recognition">Recognition</a>
+      <a href="#contact">Collaborate</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="wrap">
+        <div class="glass">
+          <div class="hero-grid">
+            <div>
+              <p class="eyebrow">Royal Academy of Engineering Research Fellow · University of Oxford</p>
+              <h1>Lightweight structures and impact mechanics</h1>
+              <p class="lede">
+                I lead the Composites and Fracture theme at Oxford's Impact and Shock Mechanics Laboratory.
+                My group measures how adhesive joints, fibre composites and 3D-printed materials fail when
+                loaded in microseconds, and turns those measurements into models that partners such as
+                Rolls-Royce design with.
+              </p>
+              <div class="cta-row">
+                <a class="btn btn--primary" href="#contact">Contact details</a>
+              </div>
+            </div>
+            <aside class="hero-aside" aria-label="At a glance">
+              <figure class="portrait">
+                <img src="assets/maria-lissner.jpg" alt="Portrait of Dr Maria Lißner" width="800" height="800">
+              </figure>
+              <dl>
+                <div><dt>Position</dt><dd>RAEng Research Fellow (2024–2029) and Associate Member of Faculty, Department of Engineering Science, University of Oxford</dd></div>
+                <div><dt>Laboratory</dt><dd>Impact and Shock Mechanics Laboratory, Begbroke Science Park, Oxford</dd></div>
+                <div><dt>Expertise</dt><dd>Fracture and interface mechanics · rate-dependent failure · cohesive zone modelling · high-rate experimental methods · additive manufacturing</dd></div>
+                <div><dt>Currently</dt><dd>Lead PI on two ATI / Innovate UK programmes on impact modelling for composite aeroengine structures</dd></div>
+              </dl>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RESEARCH ============ -->
+    <section id="research">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Research programme</p>
+          <h2>Interfaces decide whether a structure survives an impact.</h2>
+          <p class="lede">
+            Modern aircraft, vehicles and protective equipment are built from heterogeneous materials:
+            carbon-fibre laminates, adhesively bonded metal-to-composite joints, additively manufactured parts.
+            Every one of them contains interfaces, and under a bird strike, a crash or a blow to the head it is
+            the interface that fails first. My Royal Academy of Engineering Fellowship,
+            <em>Unveiling Interface Dynamics: Empowering Structural Response in Extreme Environments</em>,
+            builds the experimental and computational tools to predict that failure across length scales and
+            loading rates, so that lighter, more sustainable structures can be certified with confidence.
+          </p>
+        </div>
+
+        <!-- Signature device: the strain-rate ruler -->
+        <div class="glass glass--dense ruler" aria-label="Loading rates covered by the laboratory">
+          <p class="eyebrow" style="margin-bottom:0.25rem">From quasi-static to shock</p>
+          <p style="max-width:var(--measure);color:var(--ink-soft);font-size:0.97rem">
+            A fan-blade-off event loads material roughly a million times faster than a standard tensile test.
+            Properties measured at one rate do not transfer to another, so my lab characterises materials across the
+            whole range with the same specimen geometry, and builds models that hold at every point on it.
+          </p>
+          <div class="ruler-track" role="presentation"></div>
+          <div class="ruler-ticks" aria-hidden="true">
+            <span>10<sup>-3</sup></span><span>10<sup>-2</sup></span><span>10<sup>-1</sup></span><span>10<sup>0</sup></span>
+            <span>10<sup>1</sup></span><span>10<sup>2</sup></span><span>10<sup>3</sup></span><span>10<sup>4</sup><i class="unit"> s<sup>-1</sup></i></span>
+          </div>
+          <div class="ruler-bands">
+            <div class="band" style="grid-column:1 / 5">
+              <img src="assets/media/rig-instron.jpg" alt="" loading="lazy" width="320" height="320">
+              <div><b>Screw-driven and servo-hydraulic machines</b><small>quasi-static and medium rate, with full-field strain measurement</small></div>
+            </div>
+            <div class="band" style="grid-column:5 / 7">
+              <img src="assets/media/rig-droptower.jpg" alt="" loading="lazy" width="320" height="320">
+              <div><b>Drop tower</b><small>impacts to 100 J for protective equipment</small></div>
+            </div>
+            <div class="band" style="grid-column:6 / 8">
+              <img src="assets/media/rig-hopkinson.jpg" alt="" loading="lazy" width="320" height="320">
+              <div><b>Split Hopkinson tension and pressure bars</b><small>with heated chambers, 25–100 °C</small></div>
+            </div>
+            <div class="band" style="grid-column:5 / 7">
+              <img src="assets/media/rig-mdihpb.jpg" alt="" loading="lazy" width="320" height="320">
+              <div><b>Modified direct-impact Hopkinson bar</b><small>longer pulses for foams, lattices and other soft, low-impedance materials</small></div>
+            </div>
+            <div class="band" style="grid-column:1 / 8">
+              <img src="assets/media/rig-dic.jpg" alt="" loading="lazy" width="320" height="320">
+              <div><b>Diagnostics at every rate</b><small>digital image correlation to 500,000 frames per second · X-ray CT · synchrotron phase-contrast µ-CT at the ESRF</small></div>
+            </div>
+          </div>
+          <p class="ruler-note">
+            Indicative ranges. Every experiment feeds a matching simulation: rate-, thickness-, temperature- and
+            void-dependent cohesive zone laws implemented as user subroutines in Abaqus and LS-DYNA.
+          </p>
+        </div>
+
+        <div class="cards" style="margin-top:1.25rem">
+          <article class="card glass">
+            <p class="eyebrow">Adhesive interfaces</p>
+            <h3>Predicting how bonded joints fail at speed</h3>
+            <p>
+              Bonded joints replace rivets and save weight, but their strength changes with loading rate, bondline
+              thickness and temperature. I developed the methods that measure the full traction–separation response
+              of aerospace adhesives from quasi-static to impact rates, linked the thickness effect to micro-voids
+              seen in X-ray CT, and ran the first dynamic fracture experiments on carbon-fibre-to-titanium joints,
+              which revealed that failure switches from the adhesive to the composite as the rate rises.
+            </p>
+            <div class="tag-row"><span class="tag">Cohesive zone models</span><span class="tag">Hopkinson bar</span><span class="tag">X-ray CT</span></div>
+          </article>
+
+          <article class="card glass">
+            <p class="eyebrow">Aerospace composites</p>
+            <h3>Delamination and damage in carbon-fibre laminates</h3>
+            <p>
+              Engine casings must contain high-speed debris; fan blades must survive bird strike. With Rolls-Royce
+              and Innovate UK we showed that aerospace carbon-fibre laminates are 56–66% tougher against
+              delamination at impact rates than in a standard test, traced the mechanism with fractography, and used
+              interrupted high-rate loading with synchrotron tomography to watch damage grow inside the laminate at
+              different temperatures.
+            </p>
+            <div class="tag-row"><span class="tag">Delamination</span><span class="tag">Synchrotron µ-CT</span><span class="tag">Containment</span></div>
+          </article>
+
+          <article class="card glass">
+            <p class="eyebrow">Additive manufacturing</p>
+            <h3>Printed materials for protection</h3>
+            <p>
+              Additive manufacturing lets us design the interior of a material, not just its shape. 3D-printed
+              mouthguards tested at realistic field-hockey energies cut peak force by 10% and impulse by 25% versus
+              the thermoformed standard, and printed elastomer lattices gained 271% in specific energy absorption at
+              high rate. The same route yields new specimen designs for measuring interface fracture energy.
+            </p>
+            <div class="tag-row"><span class="tag">Lattices</span><span class="tag">Protective equipment</span><span class="tag">Hyperelastic models</span></div>
+          </article>
+
+          <article class="card glass">
+            <p class="eyebrow">Defects and data</p>
+            <h3>From imperfect materials to predictive models</h3>
+            <p>
+              Real parts contain voids, impurities and process-induced variability. The next phase of the fellowship
+              quantifies how designed and accidental heterogeneity combine to govern impact performance, through
+              stochastic defect–property modelling, machine-learning crack detection from X-ray imaging, and
+              vibration-based structural health monitoring of composite blades.
+            </p>
+            <div class="tag-row"><span class="tag">Stochastic modelling</span><span class="tag">Machine learning</span><span class="tag">Monitoring</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section id="gallery">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Gallery</p>
+          <h2>Inside the experiments</h2>
+          <p class="lede">
+            Figures from open-access papers: synchrotron tomography of damage inside a laminate, strain fields
+            around a moving crack, the rigs that load a specimen in microseconds, and the printed parts they test.
+            Click any image to see it in full.
+          </p>
+        </div>
+        <ul class="tiles" style="list-style:none;margin:0;padding:0">
+          <li class="tile">
+            <button type="button" class="tile__btn" data-full="assets/media/ct-damage.jpg" data-caption="Damage inside a carbon-fibre laminate after high-rate compression, reconstructed from synchrotron X-ray tomography at the ESRF. Warm colours mark delamination and ply cracks; the rows compare room temperature with −50 °C." data-source="Sun et al., Composites Part A (2026)" data-href="https://doi.org/10.1016/j.compositesa.2025.109284" aria-label="Open figure: Damage inside a carbon-fibre laminate after high-rate compression, reconstructed from synchrotron X-ray tomography at the ESRF. Warm colours mark delamination and ply cracks; the rows compare room temperature with −50 °C.">
+              <img src="assets/media/ct-damage.jpg" alt="" loading="lazy" style="object-position:50% 50%">
+            </button>
+            <p class="tile__caption">Damage inside a carbon-fibre laminate after high-rate compression, reconstructed from synchrotron X-ray tomography at the ESRF. Warm colours mark delamination and ply cracks; the rows compare room temperature with −50 °C. <span class="tile__source">Sun et al., Composites Part A (2026)</span></p>
+          </li>
+          <li class="tile tile--wide">
+            <button type="button" class="tile__btn" data-full="assets/media/dic-crack.jpg" data-caption="Strain field from digital image correlation ahead of a delamination crack in a wedge-loaded specimen during a Hopkinson-bar test." data-source="Chen et al., Composites Part B (2023)" data-href="https://doi.org/10.1016/j.compositesb.2023.110788" aria-label="Open figure: Strain field from digital image correlation ahead of a delamination crack in a wedge-loaded specimen during a Hopkinson-bar test.">
+              <img src="assets/media/dic-crack.jpg" alt="" loading="lazy" style="object-position:50% 50%">
+            </button>
+            <p class="tile__caption">Strain field from digital image correlation ahead of a delamination crack in a wedge-loaded specimen during a Hopkinson-bar test. <span class="tile__source">Chen et al., Composites Part B (2023)</span></p>
+          </li>
+          <li class="tile">
+            <button type="button" class="tile__btn" data-full="assets/media/hopkinson-rig.jpg" data-caption="The modified direct-impact Hopkinson pressure bar developed for soft, low-impedance materials such as foams and printed lattices." data-source="Lee et al., International Journal of Impact Engineering (2026)" data-href="https://doi.org/10.1016/j.ijimpeng.2026.105822" aria-label="Open figure: The modified direct-impact Hopkinson pressure bar developed for soft, low-impedance materials such as foams and printed lattices.">
+              <img src="assets/media/hopkinson-rig.jpg" alt="" loading="lazy" style="object-position:50% 22%">
+            </button>
+            <p class="tile__caption">The modified direct-impact Hopkinson pressure bar developed for soft, low-impedance materials such as foams and printed lattices. <span class="tile__source">Lee et al., International Journal of Impact Engineering (2026)</span></p>
+          </li>
+          <li class="tile">
+            <button type="button" class="tile__btn" data-full="assets/media/mouthguard-rig.jpg" data-caption="A 3D-printed mouthguard on its fixture ahead of drop-tower testing at field-hockey impact energies." data-source="Lißner et al., Materials &amp; Design (2023)" data-href="https://doi.org/10.1016/j.matdes.2023.112371" aria-label="Open figure: A 3D-printed mouthguard on its fixture ahead of drop-tower testing at field-hockey impact energies.">
+              <img src="assets/media/mouthguard-rig.jpg" alt="" loading="lazy" style="object-position:50% 0%">
+            </button>
+            <p class="tile__caption">A 3D-printed mouthguard on its fixture ahead of drop-tower testing at field-hockey impact energies. <span class="tile__source">Lißner et al., Materials &amp; Design (2023)</span></p>
+          </li>
+          <li class="tile">
+            <button type="button" class="tile__btn" data-full="assets/media/printed-cells.jpg" data-caption="Printed cellular designs for mouthguards, from CAD to printed part: solid, cubic air cells and spherical air cells." data-source="Saunders et al., Scientific Reports (2022)" data-href="https://doi.org/10.1038/s41598-022-08018-1" aria-label="Open figure: Printed cellular designs for mouthguards, from CAD to printed part: solid, cubic air cells and spherical air cells.">
+              <img src="assets/media/printed-cells.jpg" alt="" loading="lazy" style="object-position:50% 50%">
+            </button>
+            <p class="tile__caption">Printed cellular designs for mouthguards, from CAD to printed part: solid, cubic air cells and spherical air cells. <span class="tile__source">Saunders et al., Scientific Reports (2022)</span></p>
+          </li>
+          <li class="tile tile--wide">
+            <button type="button" class="tile__btn" data-full="assets/media/fracture-surfaces.jpg" data-caption="Fracture surfaces of the same composite after quasi-static and high-rate delamination. The failure mechanism changes with loading speed." data-source="Chen et al., Composites Part B (2023)" data-href="https://doi.org/10.1016/j.compositesb.2023.110788" aria-label="Open figure: Fracture surfaces of the same composite after quasi-static and high-rate delamination. The failure mechanism changes with loading speed.">
+              <img src="assets/media/fracture-surfaces.jpg" alt="" loading="lazy" style="object-position:50% 50%">
+            </button>
+            <p class="tile__caption">Fracture surfaces of the same composite after quasi-static and high-rate delamination. The failure mechanism changes with loading speed. <span class="tile__source">Chen et al., Composites Part B (2023)</span></p>
+          </li>
+          <li class="tile">
+            <button type="button" class="tile__btn" data-full="assets/media/grain-boundary.jpg" data-caption="Strain localising at grain boundaries in a nickel superalloy at 750 °C, measured in-situ in the electron microscope and reproduced by a crystal-plasticity model with cohesive boundaries." data-source="Alabort et al., Acta Materialia (2018)" data-href="https://doi.org/10.1016/j.actamat.2018.03.059" aria-label="Open figure: Strain localising at grain boundaries in a nickel superalloy at 750 °C, measured in-situ in the electron microscope and reproduced by a crystal-plasticity model with cohesive boundaries.">
+              <img src="assets/media/grain-boundary.jpg" alt="" loading="lazy" style="object-position:50% 0%">
+            </button>
+            <p class="tile__caption">Strain localising at grain boundaries in a nickel superalloy at 750 °C, measured in-situ in the electron microscope and reproduced by a crystal-plasticity model with cohesive boundaries. <span class="tile__source">Alabort et al., Acta Materialia (2018)</span></p>
+          </li>
+          <li class="tile">
+            <button type="button" class="tile__btn" data-full="assets/media/wedge-hopkinson.jpg" data-caption="A strain-gauged wedge entering a double-cantilever-beam specimen inside the Hopkinson bar, with the measured wedge velocity." data-source="Ponnusami et al., Composite Structures (2022)" data-href="https://doi.org/10.1016/j.compstruct.2022.115734" aria-label="Open figure: A strain-gauged wedge entering a double-cantilever-beam specimen inside the Hopkinson bar, with the measured wedge velocity.">
+              <img src="assets/media/wedge-hopkinson.jpg" alt="" loading="lazy" style="object-position:0% 100%">
+            </button>
+            <p class="tile__caption">A strain-gauged wedge entering a double-cantilever-beam specimen inside the Hopkinson bar, with the measured wedge velocity. <span class="tile__source">Ponnusami et al., Composite Structures (2022)</span></p>
+          </li>
+          <li class="tile tile--wide">
+            <button type="button" class="tile__btn" data-full="assets/media/printed-specimens.jpg" data-caption="Printed thermoplastic and standard EVA specimens before and after impacts at up to 10 m/s." data-source="Saunders et al., Scientific Reports (2022)" data-href="https://doi.org/10.1038/s41598-022-08018-1" aria-label="Open figure: Printed thermoplastic and standard EVA specimens before and after impacts at up to 10 m/s.">
+              <img src="assets/media/printed-specimens.jpg" alt="" loading="lazy" style="object-position:50% 50%">
+            </button>
+            <p class="tile__caption">Printed thermoplastic and standard EVA specimens before and after impacts at up to 10 m/s. <span class="tile__source">Saunders et al., Scientific Reports (2022)</span></p>
+          </li>
+        </ul>
+        <p class="pub-note">All figures are reproduced from articles published under the Creative Commons Attribution (CC BY) licence and are credited to their source papers.</p>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Projects</p>
+          <h2>Funded programmes as principal investigator</h2>
+        </div>
+        <div class="projects">
+          <article class="project glass">
+            <div class="when"><b>2026 – 2029</b>ATI / Innovate UK</div>
+            <div>
+              <h3>Impact modelling for narrowbody fan blades</h3>
+              <p>Development of impact-modelling techniques for narrowbody fan blade applications, integrating numerical modelling with experimental results.</p>
+            </div>
+          </article>
+          <article class="project glass">
+            <div class="when"><b>2025 – 2029</b>ATI / Innovate UK</div>
+            <div>
+              <h3>Impact modelling for composite containment casings</h3>
+              <p>Improvement of impact-modelling techniques for composite containment casings, integrating numerical modelling with experimental results.</p>
+            </div>
+          </article>
+          <article class="project glass">
+            <div class="when"><b>2024 – 2029</b>Royal Academy of Engineering</div>
+            <div>
+              <h3>Research Fellowship: Unveiling Interface Dynamics</h3>
+              <p>A five-year programme on interface failure in layered structures under dynamic conditions, developing a multiscale experimental–numerical workflow for interlaminar fracture and new additively manufactured specimen designs for interface characterisation.</p>
+            </div>
+          </article>
+          <article class="project glass">
+            <div class="when"><b>2024 – 2025</b>DYMAT Association</div>
+            <div>
+              <h3>CATALYST: Catalysing Sustainable Solutions</h3>
+              <p>Uniting dynamic-materials researchers across Mondragon University, the University of Rijeka and Arts et Métiers Bordeaux, and establishing educational programmes on the dynamic behaviour of materials. Project manager for the consortium.</p>
+            </div>
+          </article>
+          <article class="project glass">
+            <div class="when"><b>2022 – 2024</b>TransCampus Network</div>
+            <div>
+              <h3>HEFGRAV</h3>
+              <p>International collaboration between TU Dresden, King's College London and the University of Oxford on the effect of space on human physiology.</p>
+            </div>
+          </article>
+          <article class="project glass">
+            <div class="when"><b>2021 – 2023</b>TU Dresden</div>
+            <div>
+              <h3>Maria Reiche Postdoctoral Research Fellowship</h3>
+              <p>Customised materials for protective systems through additive manufacturing. One of five fellows selected to build an independent research profile at the Institute of Lightweight Engineering and Polymer Technology.</p>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ INDUSTRY ============ -->
+    <section id="industry">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Working with industry</p>
+          <h2>Applied research for industry</h2>
+        </div>
+        <div class="split">
+          <div class="block glass">
+            <h3>Rolls-Royce plc</h3>
+            <ul>
+              <li><b>UK–Germany Mechanical Design UTC Academic Liaison Lead</b><small>Since September 2025. The neutral academic link between the UK and German University Technology Centres, coordinating joint project discussions and aligning research activities across the network.</small></li>
+              <li><b>A decade inside the Rolls-Royce UTC in Solid Mechanics</b><small>From a Rolls-Royce-funded doctorate on bonded interfaces to leading two ATI programmes on fan blades and containment casings.</small></li>
+              <li><b>Departmental Recognition Award, 2024</b><small>For leading industry projects, supervising researchers and collaborating with Rolls-Royce plc and Innovate UK.</small></li>
+            </ul>
+          </div>
+          <div class="block glass">
+            <h3>What a partnership looks like</h3>
+            <ul>
+              <li><b>Bespoke experiments.</b><small>Rate-, temperature- and mode-dependent characterisation of your adhesive, laminate or printed material, with the same specimen across every rate so the data are comparable.</small></li>
+              <li><b>Models you can run.</b><small>Calibrated cohesive zone and constitutive laws delivered as Abaqus or LS-DYNA user subroutines, validated on component-scale tests.</small></li>
+              <li><b>People.</b><small>Co-supervised DPhil projects, hosted visiting researchers and secondments through the UTC.</small></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PUBLICATIONS ============ -->
+    <section id="publications">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Publications</p>
+          <h2>Twenty-four peer-reviewed papers across mechanics, materials, and additive manufacturing.</h2>
+          <p class="lede">
+            Journal of the Mechanics and Physics of Solids, Acta Materialia, ACS Nano, Composites Part A and B,
+            International Journal of Impact Engineering, Materials &amp; Design and more.
+            Full records on <a href="https://scholar.google.com/citations?user=BDbPpk8AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+            and <a href="https://orcid.org/0000-0003-1142-1006" target="_blank" rel="noopener">ORCID</a>.
+          </p>
+        </div>
+        <div class="pub-filters" role="group" aria-label="Filter publications">
+          <button type="button" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-filter="lead" aria-pressed="false">First or corresponding author</button>
+          <button type="button" data-filter="adhesives" aria-pressed="false">Adhesive interfaces</button>
+          <button type="button" data-filter="composites" aria-pressed="false">Composites</button>
+          <button type="button" data-filter="am" aria-pressed="false">Additive manufacturing</button>
+          <button type="button" data-filter="methods" aria-pressed="false">Methods</button>
+          <button type="button" data-filter="beyond" aria-pressed="false">Cross-disciplinary</button>
+        </div>
+        <ul class="pub-grid" style="list-style:none;margin:0;padding:0">
+        <li class="pub-card" data-cat="methods" data-lead="lead">
+          <button type="button" class="pub-card__inner" aria-pressed="false" aria-label="Topology optimisation using stress-state-dependent damage. Show abstract.">
+            <div class="pub-card__face pub-card__front">
+              <div class="pub-card__placeholder"><span class="mono">Applied Mathematical Modelling</span></div>
+              <div class="pub-card__caption">
+                <span class="year">2026</span>
+                <span class="pub-card__title">Topology optimisation using stress-state-dependent damage</span>
+                <span class="pub-card__authors">J. Wittig, L. Smith, D. Eakins, <em>M. Lißner</em></span>
+              </div>
+            </div>
+            <div class="pub-card__face pub-card__back">
+              <span class="pub-card__venue">Applied Mathematical Modelling, (2026) Submitted</span>
+              <div class="pub-card__abstract"><p>Manuscript under review. Abstract to follow on publication.</p></div>
+              <span class="pub-card__foot"><span class="pub-card__link pub-card__link--none">Not yet online</span><span class="mono">Click to flip back</span></span>
+            </div>
+          </button>
+        </li>
+        <li class="pub-card" data-cat="beyond" data-lead="lead">
+          <button type="button" class="pub-card__inner" aria-pressed="false" aria-label="Mechanical basis of cortical cataract. Show abstract.">
+            <div class="pub-card__face pub-card__front">
+              <img src="assets/pubs/graefes-2026.jpg" alt="" loading="lazy" width="720" height="1018">
+              <div class="pub-card__caption">
+                <span class="year">2026</span>
+                <span class="pub-card__title">Mechanical basis of cortical cataract</span>
+                <span class="pub-card__authors"><em>M. Lißner</em>, H. Burd, R. Michael, J.C. D’Antin, B. Sheil</span>
+              </div>
+            </div>
+            <div class="pub-card__face pub-card__back">
+              <span class="pub-card__venue">Graefe&#x27;s Archive for Clinical and Experimental Ophthalmology, (2026)</span>
+              <div class="pub-card__abstract"><p>Purpose: Accommodation, the ability of the human eye to adjust focus, declines with age due to progressive lens stiffening. This study hypothesizes that cycles of attempted accommodation and relaxation in presbyopic eyes (≥ 50 years) induces internal deformations in the equatorial cortex of the lens, contributing to cortical cataract formation. Methods: Finite element simulations were performed to evaluate internal strains and stresses in the equatorial cortex of lenses of different ages caused by ciliary body movements during accommodation or attempted accommodation. The models incorporated previously published data on spatial variations in lens stiffness, quantified by shear modulus, and its age-related changes. Results: In the 55-year lens model, relaxation after attempted accommodation produced significant shear strain and radial stress concentrations in the equatorial cortex. The locations of these stress and strain concentrations corresponded with cortical cataract sites reported in the literature. The simulations also demonstrated local separations at the cortex-capsule and cortex-nucleus boundaries, consistent with prior in vitro findings. These separations reduced local stress and strain concen - trations but may increase cataract risk through damage-repair and scarring. Conclusions Finite element modeling suggests the possibility that internal deformations generated during attempted accommodation in aging lenses may play a role in cortical cataract development. This suggests a complex interplay between mechanical strain and biological repair mechanisms in age-related lens pathology. Key message What is known? ● Accommodation declines with age due to progressive lens stiffening. What is new? ● Finite element modeling suggests that internal deformations generated during attempted accommodation in aging lenses may contribute to cortical cataract development. ● This study suggests a complex interplay between mechanical strain and biological repair mechanisms in age-related lens pathology.</p></div>
+              <span class="pub-card__foot"><a class="pub-card__link" href="https://doi.org/10.1007/s00417-026-07439-2" target="_blank" rel="noopener">Read the paper ↗</a><span class="mono">Click to flip back</span></span>
+            </div>
+          </button>
+        </li>
+        <li class="pub-card" data-cat="methods" data-lead="">
+          <button type="button" class="pub-card__inner" aria-pressed="false" aria-label="Modified Direct Impact Hopkinson Pressure Bar for Dynamic Compression of Low-Impedance Materials. Show abstract.">
+            <div class="pub-card__face pub-card__front">
+              <img src="assets/pubs/ijie-2026.jpg" alt="" loading="lazy" width="720" height="1018">
+              <div class="pub-card__caption">
+                <span class="year">2026</span>
+                <span class="pub-card__title">Modified Direct Impact Hopkinson Pressure Bar for Dynamic Compression of Low-Impedance Materials</span>
+                <span class="pub-card__authors">J.J. Lee, D. Townsend, N. Petrinic, <em>M. Lißner</em></span>
+              </div>
+            </div>
+            <div class="pub-card__face pub-card__back">
+              <span class="pub-card__venue">International Journal of Impact Engineering, 217, 105822, (2026)</span>
+              <div class="pub-card__abstract"><p>Testing low-impedance materials such as polymeric foams under dynamic compression presents challenges for traditional Hopkinson-type methods, which often fail to maintain stress equilibrium or transmit sufficient force. This study introduces a modified Direct Impact Hopkinson Pressure Bar (mDIHPB) system with an intermediate loading stage, addressing some of these limitations. Closed-cell Rohacell IG-71 foam was tested at strain rates of 10−2–103 s−1, demonstrating improved resolution and reliability in material impact response study, supported by a numerical model. A rate-dependent foam model was developed and calibrated using low-rate experimental data, and subsequently implemented in the Abaqus/Explicit solver to validate the experimental method and provide insight into stress wave interactions and deformation mechanisms. This numerical framework complements the experimental setup, offering predictive capability and a foundation for future dynamic testing of low-impedance materials. Compared with conventional SHPB and DIHPB techniques, the mDIHPB enables longer pulse durations, enhanced force sensitivity, and effective observation of foam deformation through densification, providing a compact and versatile solution for low-impedance material testing at medium-to-high strain rates. Details of the material model calibration based on low-rate experimental data are provided in Appendix A and Appendix B, while the SHPB apparatus and experimental procedures are described in Appendix C.</p></div>
+              <span class="pub-card__foot"><a class="pub-card__link" href="https://doi.org/10.1016/j.ijimpeng.2026.105822" target="_blank" rel="noopener">Read the paper ↗</a><span class="mono">Click to flip back</span></span>
+            </div>
+          </button>
+        </li>
+        <li class="pub-card" data-cat="composites" data-lead="">
+          <button type="button" class="pub-card__inner" aria-pressed="false" aria-label="Role of temperature in the development of micro-scale damage in CFRP laminates through interrupted high-rate loading and synchrotron phase-contrast µ-CT. Show abstract.">
+            <div class="pub-card__face pub-card__front">
+              <img src="assets/pubs/compa-sync-2025.jpg" alt="" loading="lazy" width="720" height="1018">
+              <div class="pub-card__caption">
+                <span class="year">2025</span>
+                <span class="pub-card__title">Role of temperature in the development of micro-scale damage in CFRP laminates through interrupted high-rate loading and synchrotron phase-contrast µ-CT</span>
+                <span class="pub-card__authors">X. Sun, B. Lukic, K. Liu, D. Sory, <em>M. Lißner</em>, J. Hoffmann, D. Chapman, N. Petrinic, D. Eakins</span>
+              </div>
+            </div>
+            <div class="pub-card__face pub-card__back">
+              <span class="pub-card__venue">Composites Part A: Applied Science and Manufacturing, 109284, (2025)</span>
+              <div class="pub-card__abstract"><p>Understanding the evolution of damage in aerospace-grade CFRP composites after high-speed impact events is crucial for the safe design of components that can withstand dynamic loads. In this study, the temperature-dependent mechanisms of micro-scale damage in angle-ply CFRP were studied through a combination of interrupted high-rate compression experiments and synchrotron X-ray phase-contrast micro-tomography employing deep-learning-aided image analysis. Despite the earlier damage onset at low temperatures, all specimens tested have similar apparent-yield strains. The mechanisms responsible for the early damage, namely mode-II-dominant fracture in surface and subsurface plies, are observed to be similar at both low and room temperature, with the surface ply cracks the first to develop into opened damage. After the occurrence of the middle-ply opened damage, while the room-temperature specimens dissipate energy through deformation and cracking originating from the specimen loading ends, glassy inter-ply fractures propagating from the surface lead to a rapid drop in load-bearing capacity at low temperature.</p></div>
+              <span class="pub-card__foot"><a class="pub-card__link" href="https://doi.org/10.1016/j.compositesa.2025.109284" target="_blank" rel="noopener">Read the paper ↗</a><span class="mono">Click to flip back</span></span>
+            </div>
+          </button>
+        </li>
+        <li class="pub-card" data-cat="composites" data-lead="">
+          <button type="button" class="pub-card__inner" aria-pressed="false" aria-label="A review of the effect of loading rate on the mechanical properties of unidirectional carbon fibre reinforced polymer composites. Show abstract.">
+            <div class="pub-card__face pub-card__front">
+              <img src="assets/pubs/compa-review-2025.jpg" alt="" loading="lazy" width="720" height="1018">
+              <div class="pub-card__caption">
+                <span class="year">2025</span>
+                <span class="pub-card__title">A review of the effect of loading rate on the mechanical properties of unidirectional carbon fibre reinforced polymer composites</span>
+                <span class="pub-card__authors">D. Thomson, M. Ploeckl, J. Hoffmann, <em>M. Lißner</em>, C. Pohl, G. Quino, K. Ramakrishnan, M. Toenjes, H. Cui, N. Petrinic</span>
+              </div>
+            </div>
+            <div class="pub-card__face pub-card__back">
+              <span class="pub-card__venue">Composites Part A: Applied Science and Manufacturing, 108773, (2025)</span>
+              <div class="pub-card__abstract"><p>A comprehensive literature review on the rate dependency of unidirectional CFRP composites has been carried out. Starting with the micro-scale constituents, literature data on the effect of loading rate on stiffness, strength, and fracture properties have been compared. While carbon fibres showed no significant rate effects, the rate dependency of the strength and stiffness properties was found consistent across various polymer matrix materials. In contrast, there was a general lack of consensus on the rate dependency of the matrix fracture properties. At the macroscopic scale, the rate effects on the composite strength and stiffness properties were found to remain consistent across different combinations of constituent materials, while conflicting reports have been found on the rate dependency of the fracture properties. Finally, it has been shown that the rate dependency of composite strength and stiffness properties can be related to the constituent properties through established homogenisation theories and failure criteria.</p></div>
+              <span class="pub-card__foot"><a class="pub-card__link" href="https://doi.org/10.1016/j.compositesa.2025.108773" target="_blank" rel="noopener">Read the paper ↗</a><span class="mono">Click to flip back</span></span>
+            </div>
+          </button>
+        </li>
+        <li class="pub-card" data-cat="beyond" data-lead="">
+          <button type="button" class="pub-card__inner" aria-pressed="false" aria-label="Vibration-based ice monitoring of composite blades using artificial neural networks under different icing conditions. Show abstract.">
+            <div class="pub-card__face pub-card__front">
+              <img src="assets/pubs/coldregions-2025.jpg" alt="" loading="lazy" width="720" height="1018">
+              <div class="pub-card__caption">
+                <span class="year">2025</span>
+                <span class="pub-card__title">Vibration-based ice monitoring of composite blades using artificial neural networks under different icing conditions</span>
+                <span class="pub-card__authors">J. Wittig, G. Tzortziniz, N. Modler, <em>M. Lißner</em>, A. Filippatos</span>
+              </div>
+            </div>
+            <div class="pub-card__face pub-card__back">
+              <span class="pub-card__venue">Cold Regions Science and Technology, 231, 104379 (2025)</span>
+              <div class="pub-card__abstract"><p>Cold climates pose significant challenges for wind turbines, primarily due to icing that influences electrical energy production. Precise methods are needed to identify and predict ice distribution on blades, enabling enhanced prediction of ice accumulation based on the blade&#x27;s frequency response. This study uses glass fibre reinforced plastic composite rotor blades equipped with actuators and accelerometers to measure, with a total of 1700 measurements, the response of the blade subjected to icing. Small-scale icing experiments are conducted inside a climate chamber at temperatures ranging from −10 °C to −20 °C with seven ice distribution profiles on the blades. The gathered data is analysed for the effects of icing on the frequency response of the blades. Optimised artificial neural networks, using fully connected layers and convolutional layers, are proposed to predict the accumulated ice thickness on rotor blades based on the frequency response, with weighted mean absolute percentage errors of 5.1% and 5.8%, respectively, and to predict ice volume and ice mass with errors of 5.7% and 4.9%, respectively. Overall, this study investigates the effect of icing on the frequency response of composite blades with regard to ice mass and ice location, and proposes a high-performance data-driven method for ice detection and monitoring during operation.</p></div>
+              <span class="pub-card__foot"><a class="pub-card__link" href="https://doi.org/10.1016/j.coldregions.2024.104379" target="_blank" rel="noopener">Read the paper ↗</a><span class="mono">Click to flip back</span></span>
+            </div>
+          </button>
+        </li>
+        <li class="pub-card" data-cat="beyond" data-lead="">
+          <button type="button" class="pub-card__inner" aria-pressed="false" aria-label="Method development for synchronizing processor time of accelerometer with computer for sensor-equipped health measurements. Show abstract.">
+            <div class="pub-card__face pub-card__front">
+              <img src="assets/pubs/embc-2025.jpg" alt="" loading="lazy" width="720" height="1018">
+              <div class="pub-card__caption">
+                <span class="year">2025</span>
+                <span class="pub-card__title">Method development for synchronizing processor time of accelerometer with computer for sensor-equipped health measurements</span>
+                <span class="pub-card__authors">M. Holzschuher, R. Heintz, J. Russell, <em>M. Lißner</em>, J. Bergmann, A. Winkler</span>
+              </div>
+            </div>
+            <div class="pub-card__face pub-card__back">
+              <span class="pub-card__venue">Poster, 47th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC), Copenhagen (2025)</span>
+              <div class="pub-card__abstract"><p>This paper presents a method for the precise synchronisation of inertial measurement unit (IMU) data with a computer system clock, using a motor-controlled turntable, to allow more accurate labelling of motion data. Using the case of human reaction time measurement, where motion is recorded as a response to a computer-controlled visual signal, this methodology proved capable of compensating for IMU clock drift and latency between systems, providing a robust and simple solution for applications in a wide range of IMU-sensor-equipped systems. Clinical relevance: this approach addresses time discrepancies that compromise data quality, enhancing the reliability of motion analysis in biomedical applications.</p></div>
+              <span class="pub-card__foot"><span class="pub-card__link pub-card__link--none">Not yet online</span><span class="mono">Click to flip back</span></span>
+            </div>
+          </button>
+        </li>
+        <li class="pub-card" data-cat="adhesives" data-lead="">
+          <button type="button" class="pub-card__inner" aria-pressed="false" aria-label="Universal slope-based J-integral methods for characterization of the mode I, mode II and mixed mode I/II fracture behaviour of adhesively bonded interfaces. Show abstract.">
+            <div class="pub-card__face pub-card__front">
+              <img src="assets/pubs/cst-2024.jpg" alt="" loading="lazy" width="720" height="1018">
+              <div class="pub-card__caption">
+                <span class="year">2024</span>
+                <span class="pub-card__title">Universal slope-based J-integral methods for characterization of the mode I, mode II and mixed mode I/II fracture behaviour of adhesively bonded interfaces</span>
+                <span class="pub-card__authors">F. Sun, <em>M. Lißner</em>, N. Petrinic, B.R.K. Blackman</span>
+              </div>
+            </div>
+            <div class="pub-card__face pub-card__back">
+              <span class="pub-card__venue">Composites Science and Technology, 252, 110611, (2024)</span>
+              <div class="pub-card__abstract"><p>Universal slope-based J-integral methods have been developed for the determination of the energy release rate for adhesively bonded joints under mode I, mode II and mixed-mode (I/II) loading conditions. The individual J components corresponding to the mode I and mode II loading were separated based on the J-integral decomposition theory. The proposed methods use the slopes of the substrates at various locations to characterize the energy release rate and thus avoid the measurement of crack lengths, which are especially suitable for characterizing the tough interfaces associated with large fracture process zones ahead of crack tips. Under linear elastic deformation, the slope-based J equations were found to be equivalent to classical G equations based on linear elastic fracture mechanics (LEFM). Both experimental and numerical testing of adhesively bonded joints were undertaken to validate the slope-based J equations. The universal slope-based J-integral methods provide a reliable alternative to the measurement of G for adhesive joints or laminated composites undergoing nonlinear or inelastic deformations where conventional LEFM is not valid. It is shown that LEFM, even when coupled with an effective crack length approach, can be inaccurate when damage occurs in a test specimen away from the fracture process zone, as was seen here in mode II. Slope-based J equations can avoid these inaccuracies with a careful selection of contour paths. Slope based methods are therefore strong candidates for selection in future test standards for mode II fracture characterisation of structural adhesive joints.</p></div>
+              <span class="pub-card__foot"><a class="pub-card__link" href="https://doi.org/10.1016/j.compscitech.2024.110611" target="_blank" rel="noopener">Read the paper ↗</a><span class="mono">Click to flip back</span></span>
+            </div>
+          </button>
+        </li>
+        <li class="pub-card" data-cat="am" data-lead="lead">
+          <button type="button" class="pub-card__inner" aria-pressed="false" aria-label="On the dynamic performance of additively manufactured visco-elastic meta-materials. Show abstract.">
+            <div class="pub-card__face pub-card__front">
+              <img src="assets/pubs/matlet-2024.jpg" alt="" loading="lazy" width="720" height="1018">
+              <div class="pub-card__caption">
+                <span class="year">2024</span>
+                <span class="pub-card__title">On the dynamic performance of additively manufactured visco-elastic meta-materials</span>
+                <span class="pub-card__authors">L. Le Barbenchon, <em>M. Lißner</em></span>
+              </div>
+            </div>
+            <div class="pub-card__face pub-card__back">
+              <span class="pub-card__venue">Materials Letters, 359, 135823 (2024)</span>
+              <div class="pub-card__abstract"><p>Additive manufacturing (AM) has revolutionized the production of structures with tailored material properties, including elastomer polyurethanes (EPU) which exhibit exceptional mechanical performance. EPU possesses unique characteristics, such as high elongation at break, efficient energy dissipation, and superior specific strength, making it well-suited for applications requiring resilience to dynamic loadings. By combining the advantages of AM and EPU, enhanced and customized meta-materials can be created, surpassing the mechanical performance of traditional bulk materials. However, because of the non-linear stress–strain response of both the constitutive material and the structure, designing such meta-materials for high strain-rates can be challenging. In this work, therefore, quasi-static and dynamic experiments were conducted to evaluate a meta-material architecture. The investigation revealed a strong positive rate dependency. The mechanical performances, including strength, and dissipated energy, increased with increasing loading rate. The EPU meta-materials demonstrate their suitability for dynamic applications where high energy dissipation is crucial for reducing transmitted loads.</p></div>
+              <span class="pub-card__foot"><a class="pub-card__link" href="https://doi.org/10.1016/j.matlet.2023.135823" target="_blank" rel="noopener">Read the paper ↗</a><span class="mono">Click to flip back</span></span>
+            </div>
+          </button>
+        </li>
+        <li class="pub-card" data-cat="am" data-lead="lead">
+          <button type="button" class="pub-card__inner" aria-pressed="false" aria-label="On the protectiveness of additively manufactured mouthguards. Show abstract.">
+            <div class="pub-card__face pub-card__front">
+              <img src="assets/pubs/matdes-2023.jpg" alt="" loading="lazy" width="720" height="1018">
+              <div class="pub-card__caption">
+                <span class="year">2023</span>
+                <span class="pub-card__title">On the protectiveness of additively manufactured mouthguards</span>
+                <span class="pub-card__authors"><em>M. Lißner</em>, T. Goldberg, J. Saunders, D. Townsend, N. Petrinic, J. Bergmann</span>
+              </div>
+            </div>
+            <div class="pub-card__face pub-card__back">
+              <span class="pub-card__venue">Materials and Design, 234, 112371, (2023)</span>
+              <div class="pub-card__abstract"><p>A mouthguard is a piece of equipment worn in sports worldwide to greatly reduce the chance of orodental injuries. This work uses a newly developed method for testing and analysing mouthguards subjected to high impact energies of up to 100 J. This method allows investigation and comparison between the use of additive manufacturing, and current best mouthguard manufacturing technology of thermoforming with Ethylene-vinyl acetate (EVA). The impact experiments are conducted using a drop tower and high-speed images are captured for the further analysis. Important physical parameters such as peak force, impulse and dissipated energy in the mouthguard are determined. The results revealed that the additively manufactured mouthguards made from Arnitel® ID 2045 lead to a peak force and impulse of impact that is on average 10% and 25% lower, respectively, than that experienced when using the EVA mouthguard. A lower peak force and impulse is preferred as it reduces the chance of an orodental injury occurring. The research shows that previously mouthguards have been tested at impact energies far lower than those experienced in impact prone sports such as field hockey. When using impacts with higher energies, the findings show that additive manufacturing provides a viable technology for manufacturing mouthguards, which offers many new benefits.</p></div>
+              <span class="pub-card__foot"><a class="pub-card__link" href="https://doi.org/10.1016/j.matdes.2023.112371" target="_blank" rel="noopener">Read the paper ↗</a><span class="mono">Click to flip back</span></span>
+            </div>
+          </button>
+        </li>
+        <li class="pub-card" data-cat="composites" data-lead="">
+          <button type="button" class="pub-card__inner" aria-pressed="false" aria-label="A comprehensive experimental investigation of the rate-dependent interlaminar delamination behaviour of CFRP composites. Show abstract.">
+            <div class="pub-card__face pub-card__front">
+              <img src="assets/pubs/compb-2023.jpg" alt="" loading="lazy" width="720" height="1018">
+              <div class="pub-card__caption">
+                <span class="year">2023</span>
+                <span class="pub-card__title">A comprehensive experimental investigation of the rate-dependent interlaminar delamination behaviour of CFRP composites</span>
+                <span class="pub-card__authors">Y. Chen, K. Liu, Z. Xu, H. Liu, <em>M. Lißner</em>, B. Erice, N. Petrinic</span>
+              </div>
+            </div>
+            <div class="pub-card__face pub-card__back">
+              <span class="pub-card__venue">Composites Part B, 261, 110788, (2023)</span>
+              <div class="pub-card__abstract"><p>The paper presents a systematic experimental study of the interlaminar delamination behaviour of a carbon composite subjected to Mode I, Mode II and Mixed-mode delamination at both quasi-static (QS) and high-rate (HR) conditions, which were conducted on a screw-driven test machine and in-house Hopkinson bar systems, respectively. A methodology integrating digital image correlation and the compliance-based beam theory was employed to circumvent the challenges in measuring the loads at HR tests and maintain good consistency during the data analysis of all delamination tests. The results demonstrated a positive rate-dependent delamination behaviour, with the HR Mode I, Mode II and Mixed-mode fracture toughness properties being 1.56, 1.66 and 1.60 times their QS counterparts, respectively. The cause of such a dependency was revealed following a detailed fractographic analysis, which highlighted that the observed dependency was associated with the transition of the predominant failure mechanisms in the QS and HR conditions.</p></div>
+              <span class="pub-card__foot"><a class="pub-card__link" href="https://doi.org/10.1016/j.compositesb.2023.110788" target="_blank" rel="noopener">Read the paper ↗</a><span class="mono">Click to flip back</span></span>
+            </div>
+          </button>
+        </li>
+        <li class="pub-card" data-cat="beyond" data-lead="">
+          <button type="button" class="pub-card__inner" aria-pressed="false" aria-label="Unveiling the Mechanism of the in Situ Formation of 3D Fiber Macroassemblies with Controlled Properties. Show abstract.">
+            <div class="pub-card__face pub-card__front">
+              <img src="assets/pubs/acsnano-2023.jpg" alt="" loading="lazy" width="720" height="1018">
+              <div class="pub-card__caption">
+                <span class="year">2023</span>
+                <span class="pub-card__title">Unveiling the Mechanism of the in Situ Formation of 3D Fiber Macroassemblies with Controlled Properties</span>
+                <span class="pub-card__authors">S. Dong, B.M. Maciejewska, <em>M. Lißner</em>, D. Thomson, D. Townsend, R. Millar, N. Petrinic, N. Grobert</span>
+              </div>
+            </div>
+            <div class="pub-card__face pub-card__back">
+              <span class="pub-card__venue">ACS Nano 17(7), 6800-6810, (2023)</span>
+              <div class="pub-card__abstract"><p>Electrospinning technique is well-known for the generation of different fibers. While it is a “simple” technique, it lies in the fact that the fibers are typically produced in the form of densely packed two-dimensional (2D) mats with limited thickness, shape, and porosity. The highly demanded threedimensional (3D) fiber assemblies have been explored by timeconsuming postprocessing and/or complex setup modifications. Here, we use a classic electrospinning setup to directly produce 3D fiber macrostructures only by modulating the spinning solution. Increasing solution conductivity modifies electrodynamic jet behavior and fiber assembling process; both are observed in situ using a high-speed camera. More viscous solutions render thicker fibers that own enhanced mechanical stiffness as examined by finite element analysis. We reveal the correlation between the universal solution parameters and the dimensionality of fiber assemblies, thereof, enlightening the design of more “3D spinnable” solutions that are compatible with any commercial electrospinning equipment. After a calcination step, ultralightweight ceramic fiber assemblies are generated. These inexpensive materials can clean up exceptionally large fractions of oil spillages and provide high-performance thermal insulation. This work would drive the development and scale-up production of next-generation 3D fiber materials for engineering, biomedical, and environmental applications.</p></div>
+              <span class="pub-card__foot"><a class="pub-card__link" href="https://doi.org/10.1021/acsnano.3c00289" target="_blank" rel="noopener">Read the paper ↗</a><span class="mono">Click to flip back</span></span>
+            </div>
+          </button>
+        </li>
+        <li class="pub-card" data-cat="methods" data-lead="">
+          <button type="button" class="pub-card__inner" aria-pressed="false" aria-label="Application of Digital Image Correlation for Crack Length Measurement in WDCB-Based Mode I Fracture Toughness Testing of Composites. Show abstract.">
+            <div class="pub-card__face pub-card__front">
+              <img src="assets/pubs/astm-2022.jpg" alt="" loading="lazy" width="720" height="1018">
+              <div class="pub-card__caption">
+                <span class="year">2022</span>
+                <span class="pub-card__title">Application of Digital Image Correlation for Crack Length Measurement in WDCB-Based Mode I Fracture Toughness Testing of Composites</span>
+                <span class="pub-card__authors">Y. Chen, H. Liu, K. Liu, <em>M. Lißner</em>, Z. Xu, D. Pashley, M. Palfrey, N. Petrinic</span>
+              </div>
+            </div>
+            <div class="pub-card__face pub-card__back">
+              <span class="pub-card__venue">Evaluation of Existing and New Sensor Technologies for Fatigue, Fracture, and Mechanical Testing, ASTM International, 67-82 (2022)</span>
+              <div class="pub-card__abstract"><p>Testing methodologies integrating wedge-loaded double cantilever beam (WDCB) methods with digital image correlation (DIC) are promising for measuring the Mode I interlaminar fracture toughness of fiber-reinforced composites owing to the ability to bypass the need for direct force measurement. However, such testing approaches tend to rely on an accurate evaluation of the crack length data using DIC, which still lacks systematic studies. The present research investigate d the application of DIC for measuring the Mode I fracture toughness of a carbon -fiber-reinforced composite material tested using the WDCB method. A DIC procedure was adapted to measure the crack length history , and the proposed DIC approach was validated by comparing with a beam theory-based method found in the literature. Emphasis was given on analyzing the effects of three typical DIC parameters (the number of virtual extensometers, the height of virtual extensometers, and the strain-based threshold used for crack tip identification) on the derived crack length history. 1 Department of Engineering Science, University of Oxford, Oxford, OX1 3PJ, United Kingdom 2 Department of Engineering Science, University of Oxford, Oxford, OX1 3PJ, United Kingdom 3 Department of Engineering Science, University of Oxford, Oxford, OX1 3PJ, United Kingdom 4 Department of Engineering Science, University of Oxford, Oxford, OX1 3PJ, United Kingdom 5 Department of Engineering Science, University of Oxford, Oxford, OX1 3PJ, United Kingdom 6 Imetrum Limited, Bristol, BS48 1NA, United Kingdom 7 Imetrum Limited, Bristol, BS48 1NA, United Kingdom 8 Department of Engineering Science, University of Oxford, Oxford, OX1 3PJ, United Kingdom For efficiency, the Crack Length Gauge tool available in the Imetrum Video Gauge software , which has the option to adjust the three DIC parameters and generate results equivalent to those of the proposed DIC procedure , was employed to perform the DIC -based sensitivity analysis. The results highlighted that the crack length history was independent of the height of virtual extensometers but was affected by the number of virtual extensometers and the threshold value used. To obtain a reasonable measurement of crack propagation, it was recommended that the number of virtual extensometers should be sufficiently large, and the threshold value should be sufficiently small (no larger than the failure strain in the thickness direction).</p></div>
+              <span class="pub-card__foot"><a class="pub-card__link" href="http://doi.org/10.1520/STP163820210041" target="_blank" rel="noopener">Read the paper ↗</a><span class="mono">Click to flip back</span></span>
+            </div>
+          </button>
+        </li>
+        <li class="pub-card" data-cat="composites" data-lead="lead">
+          <button type="button" class="pub-card__inner" aria-pressed="false" aria-label="Transferable Parameter Optimisation Strategy for Dynamic Interlaminar Interfaces. Show abstract.">
+            <div class="pub-card__face pub-card__front">
+              <div class="pub-card__placeholder"><span class="mono">DYMAT TM 2022 Conference Proceedings</span></div>
+              <div class="pub-card__caption">
+                <span class="year">2022</span>
+                <span class="pub-card__title">Transferable Parameter Optimisation Strategy for Dynamic Interlaminar Interfaces</span>
+                <span class="pub-card__authors">Y. Song, H. Liu, Z. Xu, N. Petrinic, <em>M. Lißner</em></span>
+              </div>
+            </div>
+            <div class="pub-card__face pub-card__back">
+              <span class="pub-card__venue">DYMAT TM 2022 Conference Proceedings, (2022)</span>
+              <div class="pub-card__abstract"><p>Conference proceedings paper, DYMAT Technical Meeting 2022. Full text available from the link.</p></div>
+              <span class="pub-card__foot"><a class="pub-card__link" href="https://freidok.uni-freiburg.de/fedora/objects/freidok:228460/datastreams/FILE1/content" target="_blank" rel="noopener">Read the paper ↗</a><span class="mono">Click to flip back</span></span>
+            </div>
+          </button>
+        </li>
+        <li class="pub-card" data-cat="composites" data-lead="">
+          <button type="button" class="pub-card__inner" aria-pressed="false" aria-label="An integrated numerical-experimental approach to determine the dynamic Mode-I interlaminar fracture toughness of fiber composites. Show abstract.">
+            <div class="pub-card__face pub-card__front">
+              <img src="assets/pubs/compstruct-2022.jpg" alt="" loading="lazy" width="720" height="1018">
+              <div class="pub-card__caption">
+                <span class="year">2022</span>
+                <span class="pub-card__title">An integrated numerical-experimental approach to determine the dynamic Mode-I interlaminar fracture toughness of fiber composites</span>
+                <span class="pub-card__authors">S. A. Ponnusami, H. Cui, B. Erice, <em>M. Lißner</em>, M. Pathan, N. Petrinic</span>
+              </div>
+            </div>
+            <div class="pub-card__face pub-card__back">
+              <span class="pub-card__venue">Composite Structures, 293, (2022)</span>
+              <div class="pub-card__abstract"><p>A combined numerical–experimental methodology is presented to determine the dynamic Mode-I fracture properties of Fibre-Reinforced Polymer (FRP) composites. The experimental aspect consists of a modified Wedge-Double cantilever Beam (WDCB) test using a Split Hopkinson Pressure Bar (SHPB) set-up followed by a numerical inverse modelling strategy using cohesive-zone approach. The proposed method is inherently robust due to the use of three independent comparison metrics namely, the strain–displacement response, the crack length history and the crack opening history to uniquely determine the delamination properties. More importantly, the complexity of dealing with the frictional effects between the wedge and the DCB specimen is effectively circumvented by utilising appropriate acquisition techniques. The proposed methodology is applied to extract the high-rate interlaminar fracture properties of a carbon fibre reinforced composite, IM7/8552 and it is further shown that a high level of confidence in the calibrated data can be established by adopting the proposed methodology.</p></div>
+              <span class="pub-card__foot"><a class="pub-card__link" href="https://doi.org/10.1016/j.compstruct.2022.115734" target="_blank" rel="noopener">Read the paper ↗</a><span class="mono">Click to flip back</span></span>
+            </div>
+          </button>
+        </li>
+        <li class="pub-card" data-cat="am" data-lead="lead">
+          <button type="button" class="pub-card__inner" aria-pressed="false" aria-label="A novel method for the mechanical testing of sports mouthguards. Show abstract.">
+            <div class="pub-card__face pub-card__front">
+              <img src="assets/pubs/applsci-2022.jpg" alt="" loading="lazy" width="720" height="1018">
+              <div class="pub-card__caption">
+                <span class="year">2022</span>
+                <span class="pub-card__title">A novel method for the mechanical testing of sports mouthguards</span>
+                <span class="pub-card__authors">T. Goldberg, <em>M. Lißner</em>, D. Townsend, N. Petrinic, J. Bergmann</span>
+              </div>
+            </div>
+            <div class="pub-card__face pub-card__back">
+              <span class="pub-card__venue">Applied Sciences, 12(7), 3449, (2022)</span>
+              <div class="pub-card__abstract"><p>Current mouthguard test methods require improvement, as the impact energies during traditional testing do not reflect the higher energy that can be observed in actual use during sport. A new data set of ball speeds experienced during the sport of field hockey was obtained. These ball speeds have then been used to estimate impact energies. This information was used to subsequently develop a new test method consisting of a high-speed camera and drop tower. Observations show an increase in energy experienced by the mouthguard for higher-impact energies. The work carried out showed that current testing methods for sports mouthguards use lower-energy impacts than experienced during the sport of field hockey. The new method that is proposed allows for a more realistic representation of real-world impacts.</p></div>
+              <span class="pub-card__foot"><a class="pub-card__link" href="https://doi.org/10.3390/app12073449" target="_blank" rel="noopener">Read the paper ↗</a><span class="mono">Click to flip back</span></span>
+            </div>
+          </button>
+        </li>
+        <li class="pub-card" data-cat="am" data-lead="lead">
+          <button type="button" class="pub-card__inner" aria-pressed="false" aria-label="Impact behaviour of 3D printed cellular structures for mouthguard applications. Show abstract.">
+            <div class="pub-card__face pub-card__front">
+              <img src="assets/pubs/scirep-2022.jpg" alt="" loading="lazy" width="720" height="1018">
+              <div class="pub-card__caption">
+                <span class="year">2022</span>
+                <span class="pub-card__title">Impact behaviour of 3D printed cellular structures for mouthguard applications</span>
+                <span class="pub-card__authors">J. Saunders, <em>M. Lißner</em>, D. Townsend, N. Petrinic, J. Bergmann</span>
+              </div>
+            </div>
+            <div class="pub-card__face pub-card__back">
+              <span class="pub-card__venue">Scientific Reports 12 (1), 4020 (2022)</span>
+              <div class="pub-card__abstract"><p>Ethylene-vinyl acetate (EVA) is the most popular material for manufacturing mouthguards. However, EVA mouthguards are problematic, for example inconsistent thicknesses across the mouthguard. Additive manufacturing provides a promising solution to this problem, as it can manufacture mouthguards with a greater precision. This paper compares the energy dissipation of EVA, the current material used for mouthguards, to various designs of a 3D printed material, some of which contain air cells. Impact testing was carried out at three different strain rates. The Split-Hopkinson bar was used for medium and high strain rate tests, and an Instron test rig was used for low strain rate testing. The best performing design dissipated 25% more energy than EVA in the medium and high strain rate testing respectively while the low strain rate testing was inconclusive. This research has shown that additive manufacturing provides a viable method of manufacturing mouthguards. This opens up the opportunity for embedding electronics/sensors into additive manufactured mouthguards.</p></div>
+              <span class="pub-card__foot"><a class="pub-card__link" href="https://doi.org/10.1038/s41598-022-08018-1" target="_blank" rel="noopener">Read the paper ↗</a><span class="mono">Click to flip back</span></span>
+            </div>
+          </button>
+        </li>
+        <li class="pub-card" data-cat="am" data-lead="lead">
+          <button type="button" class="pub-card__inner" aria-pressed="false" aria-label="Strain Rate Dependent Constitutive Modelling of 3D Printed Polymers. Show abstract.">
+            <div class="pub-card__face pub-card__front">
+              <img src="assets/pubs/dymat-2021-3dp.jpg" alt="" loading="lazy" width="720" height="1018">
+              <div class="pub-card__caption">
+                <span class="year">2021</span>
+                <span class="pub-card__title">Strain Rate Dependent Constitutive Modelling of 3D Printed Polymers</span>
+                <span class="pub-card__authors"><em>M. Lißner</em>, D. Thomson, N. Petrinic, J. Bergmann</span>
+              </div>
+            </div>
+            <div class="pub-card__face pub-card__back">
+              <span class="pub-card__venue">EPJ Web of Conferences, 250, (2021)</span>
+              <div class="pub-card__abstract"><p>Experimental results from 3D printed TPC (thermoplastic copolyester) compression specimens were used to develop a combined experimental-numerical framework to support the design of e.g. 3D printed mouthguards. First, a commercially available mate rial model capable of representing the strain -rate dependent behaviour of materials undergoing large deformations is identified. Second, experimental results from solid 3D printed compression specimens are used to calibrate the identified material models. Third, 3D printed compression specimens with two different cavity geometries are used to assess the ability of the material model to accurately reproduce the experimental observations. The numerical investigation indicates a good representation of the stra in rate dependent experimental results of 3D printed specimens.</p></div>
+              <span class="pub-card__foot"><a class="pub-card__link" href="https://doi.org/10.1051/epjconf/202125002029" target="_blank" rel="noopener">Read the paper ↗</a><span class="mono">Click to flip back</span></span>
+            </div>
+          </button>
+        </li>
+        <li class="pub-card" data-cat="adhesives" data-lead="">
+          <button type="button" class="pub-card__inner" aria-pressed="false" aria-label="On the Temperature Dependent Mechanical Response of Dynamically-loaded Shear-dominated Adhesive Structures. Show abstract.">
+            <div class="pub-card__face pub-card__front">
+              <img src="assets/pubs/dymat-2021-temp.jpg" alt="" loading="lazy" width="720" height="1018">
+              <div class="pub-card__caption">
+                <span class="year">2021</span>
+                <span class="pub-card__title">On the Temperature Dependent Mechanical Response of Dynamically-loaded Shear-dominated Adhesive Structures</span>
+                <span class="pub-card__authors">B. Erice, <em>M. Lißner</em>, J. Wittig, A. Hornig, M. Gude, N. Petrinic</span>
+              </div>
+            </div>
+            <div class="pub-card__face pub-card__back">
+              <span class="pub-card__venue">EPJ Web of Conferences 250, 02016 (2021)</span>
+              <div class="pub-card__abstract"><p>A mode II mechanical characterisation of the adhesive joints is performed testing shear lap joint specimens in a Split Hopkinson Tensile Bar (SHTB), equipped with a temperature chamber. The experimentally - obtained traction-separation curves were used to develop a Cohesive Zone Model (CZM) capable of representing the s train-rate and temperature - dependent mechanical response of the adhesive joints. To validate the model, End Notch Flexure (ENF) multi-material specimens made from titanium and carbon fibre reinforced polymer composite laminate s were tested at different temperatures using a Split Hopkinson Pressure Bar setup with an in -house made temperature chamber. The finite element (FE) simulations of such tests employing the developed CZM showed the model’s ability to accurately predict the adhesive joints’ failure as w ell as to understand the failure sequence of multi -material adhesive joint combinations.</p></div>
+              <span class="pub-card__foot"><a class="pub-card__link" href="https://doi.org/10.1051/epjconf/202125002016" target="_blank" rel="noopener">Read the paper ↗</a><span class="mono">Click to flip back</span></span>
+            </div>
+          </button>
+        </li>
+        <li class="pub-card" data-cat="adhesives" data-lead="lead">
+          <button type="button" class="pub-card__inner" aria-pressed="false" aria-label="Multi-material adhesively bonded structures: Characterisation and modelling of their rate-dependent performance. Show abstract.">
+            <div class="pub-card__face pub-card__front">
+              <img src="assets/pubs/compb-2020.jpg" alt="" loading="lazy" width="720" height="1018">
+              <div class="pub-card__caption">
+                <span class="year">2020</span>
+                <span class="pub-card__title">Multi-material adhesively bonded structures: Characterisation and modelling of their rate-dependent performance</span>
+                <span class="pub-card__authors"><em>M. Lißner</em>, B. Erice, E. Alabort, D. Thomson, H. Cui, C. Kaboglu, B.R.K. Blackman, M. Gude, N. Petrinic</span>
+              </div>
+            </div>
+            <div class="pub-card__face pub-card__back">
+              <span class="pub-card__venue">Composite Part B: Engineering, 195, 108077, (2020)</span>
+              <div class="pub-card__abstract"><p>The rate-dependent failure response of multi-material adhesive joints for three deformation modes is investigated. A combination of carbon fibre reinforced polymers (CFRP) and titanium alloy Ti-6Al-4V is employed. The experiments provide important information about the failure sequence of a multi-material adhesive joints, which depends upon the loading rate regime. This is the first time that dynamic fracture mechanics experiments are performed in multi-material adhesive structures. The observed experimental results suggest a rate-dependent failure sequence for mode I dominated fracture. Simulations of the experiments are used to predict and rationalise the failure performance of the multi-material adhesive joint. The numerical analysis highlighted the importance of the individual knowledge of the rate-dependent mechanical performance of adhesive and composite to fully understand the fracture sequence of multi-material joints under impact.</p></div>
+              <span class="pub-card__foot"><a class="pub-card__link" href="https://doi.org/10.1016/j.compositesb.2020.108077" target="_blank" rel="noopener">Read the paper ↗</a><span class="mono">Click to flip back</span></span>
+            </div>
+          </button>
+        </li>
+        <li class="pub-card" data-cat="adhesives" data-lead="lead">
+          <button type="button" class="pub-card__inner" aria-pressed="false" aria-label="On the dynamic response of adhesively bonded structures. Show abstract.">
+            <div class="pub-card__face pub-card__front">
+              <img src="assets/pubs/ijie-2020.jpg" alt="" loading="lazy" width="720" height="1018">
+              <div class="pub-card__caption">
+                <span class="year">2020</span>
+                <span class="pub-card__title">On the dynamic response of adhesively bonded structures</span>
+                <span class="pub-card__authors"><em>M. Lißner</em>, E. Alabort, B. Erice, H. Cui, B.R.K. Blackman, N. Petrinic</span>
+              </div>
+            </div>
+            <div class="pub-card__face pub-card__back">
+              <span class="pub-card__venue">International Journal of Impact Engineering, 138, 103479, (2020)</span>
+              <div class="pub-card__abstract"><p>Fracture mechanics experiments are used to investigate the rate-dependent failure of adhesively bonded structures under di fferent deformation modes: I, II and I/II. First, the high-rate mechanical response of the adhesive interface is analysed with a newly developed method – which relies entirely upon digital image correlation. The method was purposely designed to avoid any dynamic eff ects which may be present. This novel method is veri fied against quasi-static standard methods showing good agreement. Finally, simulations of the experiments are used to validate a cohesive zone model of the adhesive. The ability of the model to predict cohesive failure under a wide range of strain rates and deformation modes is demonstrated.</p></div>
+              <span class="pub-card__foot"><a class="pub-card__link" href="https://doi.org/10.1016/j.ijimpeng.2019.103479" target="_blank" rel="noopener">Read the paper ↗</a><span class="mono">Click to flip back</span></span>
+            </div>
+          </button>
+        </li>
+        <li class="pub-card" data-cat="adhesives" data-lead="lead">
+          <button type="button" class="pub-card__inner" aria-pressed="false" aria-label="Experimental characterisation and numerical modelling of the influence of bondline thickness, loading rate, and deformation mode on the response of ductile adhesive interfaces. Show abstract.">
+            <div class="pub-card__face pub-card__front">
+              <img src="assets/pubs/jmps-2019.jpg" alt="" loading="lazy" width="720" height="1018">
+              <div class="pub-card__caption">
+                <span class="year">2019</span>
+                <span class="pub-card__title">Experimental characterisation and numerical modelling of the influence of bondline thickness, loading rate, and deformation mode on the response of ductile adhesive interfaces</span>
+                <span class="pub-card__authors"><em>M. Lißner</em>, E. Alabort, H. Cui, R. Rito, B.R.K. Blackman, N. Petrinic</span>
+              </div>
+            </div>
+            <div class="pub-card__face pub-card__back">
+              <span class="pub-card__venue">Journal of the Mechanics and Physics of Solids, 130, 349-369, (2019)</span>
+              <div class="pub-card__abstract"><p>A new method for characterising the rate-dependent failure of ductile adhesively bonded structures has been developed and used to investigate the different modes of loading of representative interfaces. Furthermore, experimental observations enabled a newly developed cohesive zone model that captures all critical aspects of the observed and quantified behaviour of the adhesive under consideration. In particular, the model is capable of reproducing the conducted experiments by incorporating both the dependence of the deformation rate and the adhesive thickness. For that, computed tomography of the adhesive interface was used to resolve three-dimensionally the adhesive volume. The volume fraction of microscopic voids in the adhesive was introduced into the model to rationalise the observed dependence of the mechanical response of the adhesive upon its thickness. Finally, the cohesive zone model was proven with mixed-mode fracture experiments which demonstrate the model’s ability to simulate more complex deformation regimes.</p></div>
+              <span class="pub-card__foot"><a class="pub-card__link" href="https://doi.org/10.1016/j.jmps.2019.06.011" target="_blank" rel="noopener">Read the paper ↗</a><span class="mono">Click to flip back</span></span>
+            </div>
+          </button>
+        </li>
+        <li class="pub-card" data-cat="adhesives" data-lead="lead">
+          <button type="button" class="pub-card__inner" aria-pressed="false" aria-label="A rate dependent experimental and numerical analysis of adhesive joints under different loading directions. Show abstract.">
+            <div class="pub-card__face pub-card__front">
+              <img src="assets/pubs/epjst-2018.jpg" alt="" loading="lazy" width="720" height="1018">
+              <div class="pub-card__caption">
+                <span class="year">2018</span>
+                <span class="pub-card__title">A rate dependent experimental and numerical analysis of adhesive joints under different loading directions</span>
+                <span class="pub-card__authors"><em>M. Lißner</em>, E. Alabort, H. Cui, N. Petrinic</span>
+              </div>
+            </div>
+            <div class="pub-card__face pub-card__back">
+              <span class="pub-card__venue">Eur. Phys. J. Spec. Top., 227, 85-97, (2018)</span>
+              <div class="pub-card__abstract"><p>Adhesively bonded joints subjected to dynamic loading demand reliable and accurate measurement techniques to capture their rate dependent traction–separation behaviour. Particularly challenging is the measurement of damage and failure processes which are fundamental to develop the corresponding cohesive zone models. This paper proposes a new experimental methodology for the characterisation of rate-dependent behaviour of adhesive joints. The results of the adopted approach have been used to calibrate a rate-dependent numerical cohesive model proposed to simulate the failure of adhesive joints. The procedure was benchmarked against quasi-static DCB and ENF experiments.</p></div>
+              <span class="pub-card__foot"><a class="pub-card__link" href="https://doi.org/10.1140/epjst/e2018-00070-x" target="_blank" rel="noopener">Read the paper ↗</a><span class="mono">Click to flip back</span></span>
+            </div>
+          </button>
+        </li>
+        <li class="pub-card" data-cat="beyond" data-lead="">
+          <button type="button" class="pub-card__inner" aria-pressed="false" aria-label="Grain boundary properties of a nickel-based superalloy: Characterisation and modelling. Show abstract.">
+            <div class="pub-card__face pub-card__front">
+              <img src="assets/pubs/actamat-2018.jpg" alt="" loading="lazy" width="720" height="1018">
+              <div class="pub-card__caption">
+                <span class="year">2018</span>
+                <span class="pub-card__title">Grain boundary properties of a nickel-based superalloy: Characterisation and modelling</span>
+                <span class="pub-card__authors">E. Alabort, D. Barba, S. Sulzer, <em>M. Lißner</em>, N. Petrinic, R.C. Reed</span>
+              </div>
+            </div>
+            <div class="pub-card__face pub-card__back">
+              <span class="pub-card__venue">Acta Materialia, 151, (2018)</span>
+              <div class="pub-card__abstract"><p>Miniaturised tensile tests coupled with in-situ scanning electron microscopy are used to deduce the grain boundary properties of a nickel-based superalloy at 750°C. This allows the damage initiation, evolution and failure processes to be observed directly. The signi ficant variation in ductility e consistent with the limited number of grain boundaries being present e is rationalised using a crystal plasticity approach calibrated by experiments on single crystals loaded along the &lt;001&gt;, &lt;011&gt;, and &lt;111&gt; directions. Quantitative strength and toughness values for the grain boundaries are estimated using a cohesive zone method. The modelling approach is used to determine an approximation of the size of the representative volume element (RVE) needed for volume-averaged behaviour.</p></div>
+              <span class="pub-card__foot"><a class="pub-card__link" href="https://doi.org/10.1016/j.actamat.2018.03.059" target="_blank" rel="noopener">Read the paper ↗</a><span class="mono">Click to flip back</span></span>
+            </div>
+          </button>
+        </li>
+        <li class="pub-card" data-cat="adhesives" data-lead="lead">
+          <button type="button" class="pub-card__inner" aria-pressed="false" aria-label="On the rate dependent behaviour of epoxy adhesive joints: experimental characterisation and modelling of mode I failure. Show abstract.">
+            <div class="pub-card__face pub-card__front">
+              <img src="assets/pubs/compstruct-2018.jpg" alt="" loading="lazy" width="720" height="1018">
+              <div class="pub-card__caption">
+                <span class="year">2018</span>
+                <span class="pub-card__title">On the rate dependent behaviour of epoxy adhesive joints: experimental characterisation and modelling of mode I failure</span>
+                <span class="pub-card__authors"><em>M. Lißner</em>, E. Alabort, H. Cui, A. Pellegrino, N. Petrinic</span>
+              </div>
+            </div>
+            <div class="pub-card__face pub-card__back">
+              <span class="pub-card__venue">Composite Structures, 189, 286-303, (2018)</span>
+              <div class="pub-card__abstract"><p>The increasing use of adhesive joints in dynamic applications require reliable measurements of the rate-dependent stress-displacement behaviour. The direct measurement of the stress-displacement curve is necessary when using cohesive models in discretised solutions of boundary value problems in solid mechanics. This paper aims to investigate the rate-dependent tensile failure of adhesive joints by using a new experimental methodology – it relies upon the combination of the stress wave propagation theory and digital image correlation methods on high speed footage to quantify the tensile stress and the dissipated energy respectively. For this purpose, the Split Hopkinson Bar methodology was employed – the experimental con figuration was optimised using numerical modelling. To prove the sensitivity of our framework, two di fferent adhesives are characterised at di fferent loading rates: the adhesive failure strength was found to increase considerably with the strain rate, while the plastic deformation of these adhesives was reduced. The film adhesive showed superior performance over the particle toughened one. In the final part, a rate-dependent cohesive zone model is proposed, one which captures the measured behaviour and which has the potential to be used in industrial applications.</p></div>
+              <span class="pub-card__foot"><a class="pub-card__link" href="https://doi.org/10.1016/j.compstruct.2018.01.019" target="_blank" rel="noopener">Read the paper ↗</a><span class="mono">Click to flip back</span></span>
+            </div>
+          </button>
+        </li>
+        </ul>
+        <p class="pub-note">Click any card to read the abstract. Names in bold mark Maria Lißner's authorship. One further manuscript on topology optimisation with stress-state-dependent damage is under review.</p>
+      </div>
+    </section>
+
+    <!-- ============ RECOGNITION ============ -->
+    <section id="recognition">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Recognition</p>
+          <h2>Awards and Recognition</h2>
+        </div>
+        <div class="awards">
+          <article class="award glass">
+            <span class="year">2024</span>
+            <h3>VDI Ring of Honour</h3>
+            <p>The Association of German Engineers' award for engineers under 40 whose work stands out far beyond the ordinary, presented in Düsseldorf for interdisciplinary contributions to lightweight structures under extreme loading. <a href="https://eng.ox.ac.uk/news/researcher-honoured-with-ring-of-honour-from-the-association-of-german-engineers/" target="_blank" rel="noopener">Oxford news</a> · <a href="https://www.vdi.de/news/detail/preiswuerdig-verleihung-des-vdi-ehrenrings-2024" target="_blank" rel="noopener">VDI interview</a></p>
+          </article>
+          <article class="award glass">
+            <span class="year">2024</span>
+            <h3>Royal Academy of Engineering Research Fellowship</h3>
+            <p>Five years of support for an integrated programme on interface characteristics across multiple length scales in heterogeneous materials under extreme loading. <a href="https://eng.ox.ac.uk/news/researcher-honoured-with-royal-academy-of-engineering-research-fellowship" target="_blank" rel="noopener">Oxford news</a> · <a href="https://raeng.org.uk/programmes-and-prizes/programmes/uk-grants-and-prizes/support-for-research/research-awardees/research-fellowships-awardees/2024-2029/dr-maria-lissner/" target="_blank" rel="noopener">RAEng profile</a></p>
+          </article>
+          <article class="award glass">
+            <span class="year">2024</span>
+            <h3>Recognition Award, Department of Engineering Science</h3>
+            <p>For leading industry projects, supervising researchers and collaborating with Rolls-Royce plc and Innovate UK.</p>
+          </article>
+          <article class="award glass">
+            <span class="year">2021</span>
+            <h3>DYMAT Best PhD Thesis Prize</h3>
+            <p>Europe's dynamic-behaviour-of-materials association recognised the thesis <em>Characterisation and modelling of the rate-dependent behaviour of adhesively bonded interfaces</em> for the excellence and scale of its research. <a href="https://eng.ox.ac.uk/news/post-doc-wins-prize-for-dphil-thesis" target="_blank" rel="noopener">Oxford news</a></p>
+          </article>
+          <article class="award glass">
+            <span class="year">2021</span>
+            <h3>Maria Reiche Postdoctoral Research Fellowship</h3>
+            <p>One of five fellows selected by TU Dresden to build an independent research programme. <a href="https://tu-dresden.de/forschung-transfer/news/maria-reiche-postdoctoral-fellowships?set_language=en" target="_blank" rel="noopener">TU Dresden</a></p>
+          </article>
+          <article class="award glass">
+            <span class="year">2017 · 2018</span>
+            <h3>Oxford IT Innovation Challenge and OxTalent Award</h3>
+            <p>Co-founded the <a href="https://oxr.eng.ox.ac.uk/about/" target="_blank" rel="noopener">Oxford X-Reality Hub</a>, connecting immersive-technology researchers across the University, and taught over 400 hours of augmented and virtual reality courses.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LEADERSHIP ============ -->
+    <section id="leadership">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Leadership, teaching and community</p>
+          <h2>Teaching, mentoring, and industry networks</h2>
+        </div>
+        <div class="split">
+          <div class="block glass">
+            <h3>Supervision and teaching</h3>
+            <ul>
+              <li><b>Two DPhil students</b> as primary supervisor, including a project on interface mechanics in heterogeneous materials: defects, impurities and rate-dependent behaviour.</li>
+              <li><b>Two postdoctoral researchers</b> line-managed and mentored.</li>
+              <li><b>Visiting researchers</b> hosted from ENSTA Paris and Mondragon University on machine-learning crack detection and 3D-printed sandwich design.</li>
+              <li><b>Lecturer, B8 Composites</b><small>Third-year mechanics of composites and laminate theory, Department of Engineering Science, from 2026.</small></li>
+              <li><b>Visiting Lecturer</b><small>Faculty of Civil Engineering, University of Rijeka, since 2023.</small></li>
+            </ul>
+          </div>
+          <div class="block glass">
+            <h3>Scientific service</h3>
+            <ul>
+              <li><b>Governing Board, DYMAT Association</b><small>Since 2024. Europe's leading organisation for the dynamic behaviour of materials.</small></li>
+              <li><b>Steering Committee, Oxford Advanced Materials Network</b><small>Since 2025.</small></li>
+              <li><b>Session chair</b><small>DYMAT International Conference 2021 (Madrid), DYMAT Technical Meeting 2025 (Bilbao), ICCSM 2025 (Vodice), also as co-organiser.</small></li>
+              <li><b>External PhD examiner</b><small>Croatia and Spain, 2025–2026.</small></li>
+              <li><b>Reviewer</b><small>Engineering Fracture Mechanics, Composites Science and Technology, International Journal of Adhesion and Adhesives, Computational Mechanics, Engineering Failure Analysis and others.</small></li>
+              <li><b>Diversity in engineering</b><small>Member of VDI Women in Engineering and Femtec.Alumnae, and an advocate for greater gender diversity in engineering science.</small></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="glass" style="margin-top:1.25rem;padding:1.5rem 1.75rem">
+          <p class="eyebrow" style="margin-bottom:0.75rem">Selected invited talks</p>
+          <ul class="talks" style="margin:0;padding-left:1.1rem;columns:2;column-gap:2.5rem;font-size:0.93rem">
+            <li>Experimental-numerical failure investigation in adhesively bonded lightweight structures in extreme mechanical environments · <b>University of Cambridge, 2026</b></li>
+            <li>Additively manufactured sport protective devices: enhancing medical safety · <b>VDI Congress, Germany, 2025</b></li>
+            <li>High-performance structures in extreme environments · <b>University of Rijeka, 2024</b></li>
+            <li>On the dynamic response of adhesive interfaces · <b>French-German Research Institute ISL, 2023</b></li>
+            <li>Impact mechanics of high-performance structures · <b>Arts et Métiers Bordeaux, 2023</b></li>
+            <li>Interfaces at different length scales: opportunities and challenges · <b>Rolls-Royce Mechanical UTP, 2022</b></li>
+            <li>Characterisation and modelling of the rate-dependent behaviour of adhesively bonded structures · <b>13th DYMAT International Conference, Madrid, 2021</b></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="contact">
+      <div class="wrap">
+        <div class="glass">
+          <div class="contact-grid">
+            <div>
+              <p class="eyebrow">Collaborate</p>
+              <h2>Get in touch</h2>
+              <p class="lede" style="margin-top:1rem">
+                I welcome conversations with industrial partners who need rate-dependent data and models they can
+                design with, funders looking to support interface mechanics for safer and more sustainable
+                structures, and researchers interested in joint proposals, visits or co-supervised students.
+              </p>
+            </div>
+            <div>
+              <address>
+                <b>Dr Maria Lißner</b>, Dipl.-Ing., DPhil<br>
+                Department of Engineering Science<br>
+                University of Oxford<br>
+                Parks Road, Oxford OX1 3PJ, UK<br>
+                <a href="mailto:maria.lissner@eng.ox.ac.uk">maria.lissner@eng.ox.ac.uk</a>
+              </address>
+              <div class="links">
+                <a href="https://eng.ox.ac.uk/people/maria-lissner" target="_blank" rel="noopener">Oxford profile <span>eng.ox.ac.uk</span></a>
+                <a href="https://scholar.google.com/citations?user=BDbPpk8AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar <span>citations</span></a>
+                <a href="https://orcid.org/0000-0003-1142-1006" target="_blank" rel="noopener">ORCID <span>0000-0003-1142-1006</span></a>
+                <a href="https://www.researchgate.net/profile/Maria-Lissner" target="_blank" rel="noopener">ResearchGate <span>profile</span></a>
+                <a href="https://uk.linkedin.com/in/maria-lissner/en" target="_blank" rel="noopener">LinkedIn <span>profile</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <dialog id="lightbox" class="lightbox" aria-label="Figure">
+    <button type="button" class="lightbox__close" aria-label="Close">&times;</button>
+    <img src="" alt="">
+    <p class="lightbox__caption"><span></span> <a href="#" target="_blank" rel="noopener"></a></p>
+  </dialog>
+
+  <footer>
+    <span>© 2026 Maria Lißner · University of Oxford</span>
+    <span>Impact and Shock Mechanics Laboratory, Department of Engineering Science</span>
+  </footer>
+
+  <!-- Porous shader background is parked: restore with <canvas id="bone-bg"> and <script src="bone-bg.js"> -->
+  <script>
+    // Gallery lightbox
+    (function () {
+      var dlg = document.getElementById('lightbox');
+      if (!dlg || !dlg.showModal) return;
+      var img = dlg.querySelector('img'), cap = dlg.querySelector('.lightbox__caption span'), src = dlg.querySelector('.lightbox__caption a');
+      document.querySelectorAll('.tile__btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          img.src = btn.dataset.full;
+          img.alt = btn.dataset.caption;
+          cap.textContent = btn.dataset.caption;
+          src.textContent = btn.dataset.source;
+          src.href = btn.dataset.href;
+          dlg.showModal();
+        });
+      });
+      dlg.querySelector('.lightbox__close').addEventListener('click', function () { dlg.close(); });
+      dlg.addEventListener('click', function (e) { if (e.target === dlg) dlg.close(); });
+      dlg.addEventListener('close', function () { img.src = ''; });
+    })();
+
+    // Publication card flip
+    document.querySelectorAll('.pub-card__inner').forEach(function (btn) {
+      btn.addEventListener('click', function (e) {
+        if (e.target.closest('a')) return;           // let the DOI link work without flipping
+        var on = btn.getAttribute('aria-pressed') === 'true';
+        btn.setAttribute('aria-pressed', on ? 'false' : 'true');
+      });
+    });
+
+    // Publication filters
+    (function () {
+      var buttons = document.querySelectorAll('.pub-filters button');
+      var pubs = document.querySelectorAll('.pub-card');
+      buttons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var f = btn.dataset.filter;
+          buttons.forEach(function (b) { b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'); });
+          pubs.forEach(function (p) {
+            var show = f === 'all' || (f === 'lead' ? p.dataset.lead === 'lead' : p.dataset.cat === f);
+            p.hidden = !show;
+          });
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

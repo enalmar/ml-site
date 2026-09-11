@@ -1,0 +1,7 @@
+# Source material: CV and publisher PDFs are not for public distribution
+background/
+
+# Local tooling
+.claude/
+.DS_Store
+_scratch
