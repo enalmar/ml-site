@@ -273,18 +273,164 @@ section + section { padding-top: 0; }
 }
 .stat span { display: block; margin-top: 0.4rem; font-size: 0.85rem; color: var(--ink-soft); }
 
-/* Cards */
-.cards {
+/* ------------------------------------------------------------------
+   Research themes: specimen cross-section
+   A bonded joint seen edge-on. Each band is a research theme; selecting one
+   opens a gap at its interfaces, which is what delamination looks like.
+------------------------------------------------------------------- */
+.stack {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1.25rem;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  gap: clamp(1.25rem, 3vw, 2.75rem);
+  align-items: start;
+  padding: clamp(1.5rem, 3vw, 2.25rem);
+  --sep-scale: 1px;
 }
-@media (max-width: 1100px) { .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 640px) { .cards { grid-template-columns: 1fr; } }
-.card { padding: 1.75rem; display: grid; gap: 0.75rem; align-content: start; }
-.card h3 { margin-bottom: 0.2rem; }
-.card p { font-size: 0.97rem; color: var(--ink-soft); }
-.card .tag-row { margin-top: auto; padding-top: 0.5rem; }
+.stack__fig { position: relative; aspect-ratio: 460 / 420; }
+.stack__svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+
+/* Materials: told apart by value and texture, not by adding hues to the palette. */
+.sx-ti      { fill: #b7c0c7; }
+.sx-mark    { fill: none; stroke: rgba(32, 36, 42, 0.16); stroke-width: 1; stroke-linecap: round; }
+.sx-adh     { fill: #e2e6e9; }
+.sx-ply--a  { fill: #4e7d89; }
+.sx-ply--b  { fill: #6f9aa6; }
+.sx-plyline { fill: none; stroke: rgba(255, 255, 255, 0.28); stroke-width: 0.8; }
+.sx-lat     { fill: rgba(255, 255, 255, 0.5); }
+.sx-strut   { fill: none; stroke: var(--accent); stroke-width: 1.6; stroke-linecap: round; opacity: 0.72; }
+.sx-lead    { fill: none; stroke: rgba(32, 36, 42, 0.3); stroke-width: 1; }
+.sxhit      { fill: transparent; }
+
+/* A void is absence, so it is drawn as absence: page ground with a rim, no new colour. */
+.sx-void, .sx-delam { fill: #eef0f2; stroke: rgba(32, 36, 42, 0.42); stroke-width: 1; }
+.sx-crack { fill: none; stroke: rgba(32, 36, 42, 0.6); stroke-width: 1.3; stroke-linecap: round; }
+.sx-void, .sx-delam, .sx-crack { transition: stroke 260ms ease, stroke-width 260ms ease; }
+
+/* The interfaces themselves. */
+.sx-iface { fill: none; stroke: var(--accent-deep); stroke-width: 1.2; opacity: 0.4; transition: opacity 260ms ease, stroke-width 260ms ease; }
+
+/* Separation. --sep is set per state; --sep-scale drops to 0 for reduced motion. */
+.sxb {
+  transform: translateY(calc(var(--sep, 0) * var(--sep-scale)));
+  transition: transform 460ms cubic-bezier(0.2, 0.7, 0.2, 1), opacity 260ms ease;
+  opacity: 0.62;
+}
+.stack[data-active="adhesives"]  .sxb--ti   { --sep: -12; }
+.stack[data-active="adhesives"]  .sxb--cfrp { --sep: 12; }
+.stack[data-active="adhesives"]  .sxb--lat  { --sep: 12; }
+.stack[data-active="composites"] .sxb--ti   { --sep: -12; }
+.stack[data-active="composites"] .sxb--adh  { --sep: -12; }
+.stack[data-active="composites"] .sxb--lat  { --sep: 12; }
+.stack[data-active="am"]         .sxb--ti   { --sep: -12; }
+.stack[data-active="am"]         .sxb--adh  { --sep: -12; }
+.stack[data-active="am"]         .sxb--cfrp { --sep: -12; }
+.stack[data-active="adhesives"]  .sxb--adh,
+.stack[data-active="composites"] .sxb--cfrp,
+.stack[data-active="am"]         .sxb--lat  { opacity: 1; }
+.stack[data-active="adhesives"] .sx-iface { opacity: 0.95; stroke-width: 1.9; }
+
+/* Defects run through everything, so selecting them lights the whole stack. */
+.stack[data-active="defects"] .sxb--ti   { --sep: -18; }
+.stack[data-active="defects"] .sxb--adh  { --sep: -6; }
+.stack[data-active="defects"] .sxb--cfrp { --sep: 6; }
+.stack[data-active="defects"] .sxb--lat  { --sep: 18; }
+.stack[data-active="defects"] .sxb { opacity: 1; }
+.stack[data-active="defects"] .sx-void,
+.stack[data-active="defects"] .sx-delam,
+.stack[data-active="defects"] .sx-crack { stroke: var(--accent-deep); stroke-width: 2.1; }
+
+/* Assembly on first scroll-in: inner group, so it never fights the state rules above. */
+.stack:not(.is-in) .sxb__in { opacity: 0; }
+.stack.is-in .sxb__in { animation: sxb-in 560ms cubic-bezier(0.2, 0.7, 0.2, 1) both; animation-delay: calc(var(--i) * 90ms); }
+@keyframes sxb-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+
+/* Labels double as the figure's material callouts, so nothing is said twice. */
+.stack__context, .stack__tabs button {
+  position: absolute;
+  left: 56%;
+  top: calc(var(--y) * 100%);
+  /* Each label rides with the band it names, so the two never come apart. */
+  transform: translateY(calc(-50% + var(--sep, 0) * var(--sep-scale)));
+  transition: transform 460ms cubic-bezier(0.2, 0.7, 0.2, 1);
+  width: 42%;
+  text-align: left;
+}
+.stack[data-active="adhesives"]  .stack__context,
+.stack[data-active="composites"] .stack__context,
+.stack[data-active="am"]         .stack__context { --sep: -12; }
+.stack[data-active="defects"]    .stack__context { --sep: -18; }
+.stack[data-active="composites"] .stack__tabs button[data-key="adhesives"],
+.stack[data-active="am"]         .stack__tabs button[data-key="adhesives"] { --sep: -12; }
+.stack[data-active="defects"]    .stack__tabs button[data-key="adhesives"] { --sep: -6; }
+.stack[data-active="adhesives"]  .stack__tabs button[data-key="composites"] { --sep: 12; }
+.stack[data-active="am"]         .stack__tabs button[data-key="composites"] { --sep: -12; }
+.stack[data-active="defects"]    .stack__tabs button[data-key="composites"] { --sep: 6; }
+.stack[data-active="adhesives"]  .stack__tabs button[data-key="am"],
+.stack[data-active="composites"] .stack__tabs button[data-key="am"] { --sep: 12; }
+.stack[data-active="defects"]    .stack__tabs button[data-key="am"] { --sep: 18; }
+.stack__context {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  line-height: 1.3;
+}
+.stack__context small { display: block; text-transform: none; letter-spacing: 0; font-family: var(--font-body); font-size: 0.72rem; opacity: 0.8; }
+.stack__tabs { position: absolute; inset: 0; pointer-events: none; }
+.stack__tabs button {
+  pointer-events: auto;
+  display: grid;
+  gap: 0.15rem;
+  border: 0;
+  border-left: 2px solid rgba(32, 36, 42, 0.16);
+  background: none;
+  padding: 0.35rem 0 0.35rem 0.6rem;
+  cursor: pointer;
+  color: var(--ink-soft);
+  font-family: var(--font-body);
+  transition: color 200ms ease, border-color 200ms ease, transform 460ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.stack__tabs button:hover { color: var(--ink); }
+.stack__tabs button[aria-selected="true"] { color: var(--ink); border-left-color: var(--accent-deep); }
+.stack__tabName { font-size: 0.92rem; font-weight: 600; line-height: 1.15; }
+.stack__tabSub { font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-faint); }
+.stack__tab--all {
+  border-left: 0;
+  border-top: 2px solid rgba(32, 36, 42, 0.16);
+  padding: 0.5rem 0 0;
+  left: 4%;
+  width: 92%;
+}
+.stack__tab--all[aria-selected="true"] { border-top-color: var(--accent-deep); }
+
+.stack__read [role="tabpanel"][hidden] { display: none; }
+.stack__read [role="tabpanel"] { animation: sxp-in 320ms ease both; }
+.stack__read [role="tabpanel"]:focus-visible { outline: 2px solid var(--accent-deep); outline-offset: 6px; border-radius: var(--radius); }
+.stack__read h3 { margin: 0.2rem 0 0.6rem; }
+.stack__read p { font-size: 0.97rem; color: var(--ink-soft); }
+.stack__read .tag-row { margin-top: 1rem; }
+@keyframes sxp-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+/* Phones: the figure stays as a live legend, the themes become a plain list. */
+@media (max-width: 800px) {
+  .stack { grid-template-columns: 1fr; gap: 1.25rem; }
+  .stack__fig { position: static; aspect-ratio: auto; }
+  .stack__svg { position: static; display: block; width: 100%; max-width: 290px; height: auto; margin: 0 auto 1.25rem; }
+  .stack__context, .sx-lead { display: none; }
+  .stack__tabs { position: static; display: grid; gap: 0.4rem; pointer-events: auto; }
+  .stack__tabs button { position: static; transform: none; width: 100%; }
+  .stack__tab--all { border-top: 0; border-left: 2px solid rgba(32, 36, 42, 0.16); padding: 0.35rem 0 0.35rem 0.6rem; }
+  .stack__tab--all[aria-selected="true"] { border-left-color: var(--accent-deep); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stack { --sep-scale: 0px; }
+  .stack .sxb, .stack__context, .stack__tabs button, .stack .sx-iface, .stack .sx-void, .stack .sx-delam, .stack .sx-crack { transition: none; }
+  .stack.is-in .sxb__in, .stack__read [role="tabpanel"] { animation: none; }
+  .stack:not(.is-in) .sxb__in { opacity: 1; }
+}
 
 .tag-row { display: flex; flex-wrap: wrap; gap: 0.4rem; }
 .tag {
